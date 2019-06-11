@@ -5,10 +5,10 @@
     <form method="post" action="calc">
         {% csrf_token %}
         <!--<input type="number" name="val1">-->
-        100
-        +
+        {{ php }}
+        -
         <input type="number" name="val2">
         <button type="submit"> = </button>
-        <h1>現在のHP:</h1>{{ answer }}
+        <h1>前回のHP:</h1>{{ rhp }}
     </form>
 {% endblock %}
