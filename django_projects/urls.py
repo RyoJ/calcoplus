@@ -19,7 +19,7 @@ import calculator.views
 
 urlpatterns = [
     path('hello/', calculator.views.hello),#下のプログラムが正常かどうかを確認するために作ったもの
-    path('calculator/', include('calculator.urls')),
+    path('', include('calculator.urls')),
     path('admin/', admin.site.urls),
 ]
 

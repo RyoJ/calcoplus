@@ -14,7 +14,7 @@ def calc(request):
     
     damage = int(request.POST['val2'])
 
-    with open('/home/ec2-user/environment/django_projects/calculator/hp.txt','w+') as f:
+    with open('/home/ec2-user/environment/django_projects/calculator/hp.txt','w+') as f:#データベースにする時は'w'モード？
         php = int(rhp) - int(damage)
         #print(php)
         f.write(str(php)) #事後の（新しい）hpが常に記録される
